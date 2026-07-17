@@ -1,11 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import ToolLayout from "@/components/common/ToolLayout";
 
 export default function JsonFormatterPage() {
   const [input, setInput] = useState("");
   const [output, setOutput] = useState("");
   const [error, setError] = useState("");
+  const [copied, setCopied] = useState(false);
 
   function formatJson() {
     try {
@@ -18,8 +20,29 @@ export default function JsonFormatterPage() {
     }
   }
 
+  function copyToClipboard() {
+    if (!output) return;
+
+    navigator.clipboard.writeText(output);
+    setCopied(true);
+
+    setTimeout(() => {
+      setCopied(false);
+    }, 2000);
+  }
+
+  function clearFields() {
+    setInput("");
+    setOutput("");
+    setError("");
+    setCopied(false);
+  }
+
   return (
-    <main className="mx-auto max-w-4xl px-6 py-16">
+    <ToolLayout
+      title="JSON Formatter"
+      description="Paste your JSON below and format it instantly."
+    >
       <h1 className="text-5xl font-bold">JSON Formatter</h1>
 
       <p className="mt-4 text-gray-400">
@@ -34,19 +57,41 @@ export default function JsonFormatterPage() {
           className="h-80 w-full rounded-xl border border-gray-800 bg-gray-900 p-4 outline-none"
         />
 
-        <button
-          onClick={formatJson}
-          className="rounded-lg bg-white px-6 py-3 font-semibold text-black transition-all hover:scale-105 hover:bg-gray-200"
-        >
-          Format JSON
-        </button>
+        <div className="flex gap-4">
+          <button
+            onClick={formatJson}
+            className="rounded-lg bg-white px-6 py-3 font-semibold text-black transition-all hover:scale-105 hover:bg-gray-200"
+          >
+            Format JSON
+          </button>
+
+          <button
+            onClick={copyToClipboard}
+            disabled={!output}
+            className="rounded-lg border border-gray-700 px-6 py-3 transition-all hover:bg-gray-800"
+          >
+            Copy
+          </button>
+
+          <button
+            onClick={clearFields}
+            disabled={!input && !output}
+            className="rounded-lg border border-gray-700 px-6 py-3 transition-all hover:bg-gray-800"
+          >
+            Clear
+          </button>
+        </div>
 
         {error && <p className="font-medium text-red-500">{error}</p>}
+
+        {copied && (
+          <p className="text-green-500 font-medium">Copied to clipboard!</p>
+        )}
 
         <pre className="min-h-80 rounded-xl border border-gray-800 bg-gray-900 p-4">
           {output}
         </pre>
       </div>
-    </main>
+    </ToolLayout>
   );
 }
