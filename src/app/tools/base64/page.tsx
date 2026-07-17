@@ -3,20 +3,33 @@
 import { useState } from "react";
 import ToolLayout from "@/components/common/ToolLayout";
 
-export default function JsonFormatterPage() {
+export default function Base64Page() {
   const [input, setInput] = useState("");
   const [output, setOutput] = useState("");
   const [error, setError] = useState("");
   const [copied, setCopied] = useState(false);
 
-  function formatJson() {
+  function encodeBase64() {
     try {
-      const formatted = JSON.stringify(JSON.parse(input), null, 2);
-      setOutput(formatted);
+      const encoded = btoa(input);
+
+      setOutput(encoded);
       setError("");
     } catch {
       setOutput("");
-      setError("The provided JSON is not valid");
+      setError("Unable to encode the provided text.");
+    }
+  }
+
+  function decodeBase64() {
+    try {
+      const decoded = atob(input);
+
+      setOutput(decoded);
+      setError("");
+    } catch {
+      setOutput("");
+      setError("Invalid Base64 string.");
     }
   }
 
@@ -40,29 +53,36 @@ export default function JsonFormatterPage() {
 
   return (
     <ToolLayout
-      title="JSON Formatter"
-      description="Paste your JSON below and format it instantly"
+      title="Base64 Encoder / Decoder"
+      description="Encode and decode Base64 strings instantly"
     >
       <div className="mt-10 space-y-6">
         <textarea
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          placeholder="Paste your JSON here..."
+          placeholder="Enter your text or Base64 string..."
           className="h-80 w-full rounded-xl border border-gray-800 bg-gray-900 p-4 outline-none"
         />
 
         <div className="flex gap-4">
           <button
-            onClick={formatJson}
+            onClick={encodeBase64}
             className="rounded-lg bg-white px-6 py-3 font-semibold text-black transition-all hover:scale-105 hover:bg-gray-200"
           >
-            Format JSON
+            Encode
+          </button>
+
+          <button
+            onClick={decodeBase64}
+            className="rounded-lg bg-white px-6 py-3 font-semibold text-black transition-all hover:scale-105 hover:bg-gray-200"
+          >
+            Decode
           </button>
 
           <button
             onClick={copyToClipboard}
             disabled={!output}
-            className="rounded-lg border border-gray-700 px-6 py-3 transition-all hover:bg-gray-800"
+            className="rounded-lg border border-gray-700 px-6 py-3 transition-all hover:bg-gray-800 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-transparent"
           >
             Copy
           </button>
@@ -70,7 +90,7 @@ export default function JsonFormatterPage() {
           <button
             onClick={clearFields}
             disabled={!input && !output}
-            className="rounded-lg border border-gray-700 px-6 py-3 transition-all hover:bg-gray-800"
+            className="rounded-lg border border-gray-700 px-6 py-3 transition-all hover:bg-gray-800 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-transparent"
           >
             Clear
           </button>
