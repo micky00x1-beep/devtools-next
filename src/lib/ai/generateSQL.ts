@@ -7,5 +7,5 @@ WHERE ${prompt};
 
 -- This is currently a simulated AI response.
 
--- In the next version, DevBoost AI will generate optimized SQL queries based on your request.`;
+-- In the next version, DeToolBoost AI will generate optimized SQL queries based on your request.`;
 }

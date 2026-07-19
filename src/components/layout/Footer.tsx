@@ -12,7 +12,7 @@ export default function Footer() {
               href="/"
               className="text-2xl font-bold transition-colors hover:text-violet-400"
             >
-              DevBoost
+              DeToolBoost
             </Link>
 
             <p className="mt-4 max-w-sm text-gray-400">
@@ -92,7 +92,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 py-6 text-center text-sm text-gray-500">
-          © 2026 DevBoost. All rights reserved.
+          © 2026 DeToolBoost. All rights reserved.
         </div>
       </Container>
     </footer>

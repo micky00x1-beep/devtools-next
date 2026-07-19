@@ -7,5 +7,5 @@ Your code contains ${code.length} characters.
 
 This is currently a simulated response.
 
-In the next version, DevBoost AI will analyze the code and provide a detailed explanation of how it works, identify important parts, and suggest possible improvements.`;
+In the next version, DeToolBoost AI will analyze the code and provide a detailed explanation of how it works, identify important parts, and suggest possible improvements.`;
 }

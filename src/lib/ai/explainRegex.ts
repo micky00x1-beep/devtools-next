@@ -7,5 +7,5 @@ ${regex}
 
 This is currently a simulated AI response.
 
-In the next version, DevBoost AI will explain each part of the regular expression step by step.`;
+In the next version, DeToolBoost AI will explain each part of the regular expression step by step.`;
 }

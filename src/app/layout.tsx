@@ -15,11 +15,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://example.com"),
+  metadataBase: new URL("https://detoolboost.com"),
 
   title: {
-    default: "DevBoost | Free Developer Tools",
-    template: "%s | DevBoost",
+    default: "DeToolBoost | Free Developer Tools",
+    template: "%s | DeToolBoost",
   },
 
   description:
@@ -38,13 +38,16 @@ export const metadata: Metadata = {
 
   authors: [
     {
-      name: "DevBoost",
+      name: "DeToolBoost",
     },
   ],
 
-  creator: "DevBoost",
+  creator: "DeToolBoost",
 
-  applicationName: "DevBoost",
+  applicationName: "DeToolBoost",
+  alternates: {
+    canonical: "/",
+  },
 
   robots: {
     index: true,
@@ -52,20 +55,21 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "DevBoost | Free Developer Tools",
+    title: "DeToolBoost | Free Developer Tools",
     description:
       "Fast, free developer tools and AI-powered assistants built to boost your productivity.",
-    url: "https://example.com",
-    siteName: "DevBoost",
+    url: "https://detoolboost.com",
+    siteName: "DeToolBoost",
     locale: "en_US",
     type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "DevBoost | Free Developer Tools",
+    title: "DeToolBoost | Free Developer Tools",
     description:
       "Fast, free developer tools and AI-powered assistants built to boost your productivity.",
+    site: "@DeToolBoost",
   },
 };
 

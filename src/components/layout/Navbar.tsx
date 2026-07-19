@@ -13,7 +13,7 @@ export default function Navbar() {
           href="/"
           className="text-3xl font-extrabold tracking-tight transition-all duration-300 hover:scale-105 hover:text-violet-400"
         >
-          DevBoost
+          DeToolBoost
         </Link>
 
         <div className="hidden items-center gap-8 lg:flex">

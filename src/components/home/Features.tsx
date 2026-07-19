@@ -8,7 +8,7 @@ export default function Features() {
     <Section>
       <Container>
         <SectionTitle
-          title="Why DevBoost?"
+          title="Why DeToolBoost?"
           description="Everything you need to improve your development workflow."
         />
 

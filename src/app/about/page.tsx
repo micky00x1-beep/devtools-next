@@ -3,10 +3,10 @@ export default function AboutPage() {
     <main className="mx-auto max-w-5xl px-6 py-16">
       <section className="space-y-8">
         <div>
-          <h1 className="text-5xl font-bold">About DevBoost</h1>
+          <h1 className="text-5xl font-bold">About DeToolBoost</h1>
 
           <p className="mt-6 max-w-3xl text-lg text-gray-400">
-            DevBoost is a collection of modern developer tools designed to
+            DeToolBoost is a collection of modern developer tools designed to
             improve productivity. From everyday utilities like JSON formatting
             and UUID generation to AI-powered assistants, everything is built to
             help developers work faster and smarter.
@@ -41,8 +41,8 @@ export default function AboutPage() {
 
           <p className="mt-4 text-gray-300">
             Every tool is designed with simplicity, speed and usability in mind.
-            DevBoost aims to become a place where developers can solve everyday
-            problems without switching between dozens of websites.
+            DeToolBoost aims to become a place where developers can solve
+            everyday problems without switching between dozens of websites.
           </p>
         </div>
       </section>
