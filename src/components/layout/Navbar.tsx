@@ -2,30 +2,35 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const navItems = [
+    { href: "/tools", label: "Tools" },
+    { href: "/ai", label: "AI" },
+    { href: "/about", label: "About" },
+  ];
+
   return (
     <header className="sticky top-0 z-50 border-b border-gray-800/80 bg-black/80 backdrop-blur-lg">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <nav className="relative mx-auto flex max-w-7xl items-center px-6 py-4">
+        {/* Logo */}
         <Link
           href="/"
-          className="text-3xl font-extrabold tracking-tight transition-all duration-300 hover:scale-105 hover:text-violet-400"
+          className="z-10 text-3xl font-extrabold tracking-tight transition-all duration-300 hover:scale-105 hover:text-violet-400"
         >
           DeToolBoost
         </Link>
 
-        <div className="hidden items-center gap-8 lg:flex">
-          {[
-            { href: "/tools", label: "Tools" },
-            { href: "/ai", label: "AI" },
-            { href: "/about", label: "About" },
-          ].map((item) => (
+        {/* Desktop Navigation */}
+        <div className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-8 lg:flex">
+          {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="group relative transition-all duration-300 hover:text-violet-400"
+              className="group relative transition-colors duration-300 hover:text-violet-400"
             >
               {item.label}
 
@@ -34,54 +39,30 @@ export default function Navbar() {
           ))}
         </div>
 
-        <a
-          href="https://github.com/micky00x1-beep/devtools-next"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hidden rounded-xl border border-gray-700 px-4 py-2 font-medium transition-all duration-300 hover:-translate-y-0.5 hover:border-violet-500 hover:bg-violet-500 hover:text-white lg:block"
-        >
-          GitHub
-        </a>
-
+        {/* Mobile Menu Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="text-3xl lg:hidden"
+          className="ml-auto lg:hidden"
+          aria-label="Toggle menu"
         >
-          ☰
+          {isOpen ? <X size={30} /> : <Menu size={30} />}
         </button>
       </nav>
 
+      {/* Mobile Menu */}
       {isOpen && (
         <div className="border-t border-gray-800 bg-black lg:hidden">
           <div className="flex flex-col px-6 py-4">
-            <Link
-              href="/tools"
-              className="py-3"
-              onClick={() => setIsOpen(false)}
-            >
-              Tools
-            </Link>
-
-            <Link href="/ai" className="py-3" onClick={() => setIsOpen(false)}>
-              AI
-            </Link>
-
-            <Link
-              href="/about"
-              className="py-3"
-              onClick={() => setIsOpen(false)}
-            >
-              About
-            </Link>
-
-            <a
-              href="https://github.com/micky00x1-beep/devtools-next"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="py-3"
-            >
-              GitHub
-            </a>
+            {navItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="py-3 transition-colors hover:text-violet-400"
+                onClick={() => setIsOpen(false)}
+              >
+                {item.label}
+              </Link>
+            ))}
           </div>
         </div>
       )}
