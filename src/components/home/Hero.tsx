@@ -7,8 +7,8 @@ export default function Hero() {
     <Section>
       <Container>
         <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
-          <span className="rounded-full border border-violet-500/30 bg-violet-500/10 px-4 py-1 text-sm font-medium text-violet-400">
-            🚀 Free Developer Toolkit
+          <span className="rounded-full border border-violet-500/30 bg-violet-500/10 px-4 py-2 text-sm font-medium text-violet-400">
+            🚀 Modern Developer Toolkit
           </span>
 
           <h1 className="mt-8 text-5xl font-extrabold tracking-tight sm:text-6xl lg:text-7xl">
@@ -17,8 +17,8 @@ export default function Hero() {
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-gray-400">
-            Everything you need to boost your development workflow. Free
-            developer utilities and AI-powered assistants, all in one place.
+            Fast, free developer tools and AI-powered assistants to help you
+            build better software.
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">

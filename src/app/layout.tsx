@@ -15,8 +15,58 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DevBoost",
-  description: "Modern developer tools for developers.",
+  metadataBase: new URL("https://example.com"),
+
+  title: {
+    default: "DevBoost | Free Developer Tools",
+    template: "%s | DevBoost",
+  },
+
+  description:
+    "Fast, free developer tools and AI-powered assistants built to boost your productivity.",
+
+  keywords: [
+    "developer tools",
+    "json formatter",
+    "uuid generator",
+    "base64 encoder",
+    "AI developer tools",
+    "web development",
+    "frontend tools",
+    "online utilities",
+  ],
+
+  authors: [
+    {
+      name: "DevBoost",
+    },
+  ],
+
+  creator: "DevBoost",
+
+  applicationName: "DevBoost",
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
+  openGraph: {
+    title: "DevBoost | Free Developer Tools",
+    description:
+      "Fast, free developer tools and AI-powered assistants built to boost your productivity.",
+    url: "https://example.com",
+    siteName: "DevBoost",
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "DevBoost | Free Developer Tools",
+    description:
+      "Fast, free developer tools and AI-powered assistants built to boost your productivity.",
+  },
 };
 
 export default function RootLayout({
