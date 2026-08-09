@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DeToolBoost
 
-## Getting Started
+DeToolBoost is a web-based collection of developer tools designed to make common development tasks faster and easier.
 
-First, run the development server:
+The project is built with Next.js and focuses on a clean, responsive interface with lightweight browser-based utilities.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+🌐 **Live website:** https://detoolboost.com
+
+## Features
+
+### Developer Tools
+
+- **JSON Formatter**
+  - Format and validate JSON
+  - Copy formatted output
+  - Clear input and output
+
+- **Base64 Encoder & Decoder**
+  - Encode text to Base64
+  - Decode Base64 strings
+  - UTF-8 support
+  - Copy output
+
+- **UUID Generator**
+  - Generate UUIDs using the browser's native `crypto.randomUUID()` API
+  - Copy generated UUIDs
+  - Clear generated values
+
+### AI Tools
+
+DeToolBoost also includes an AI tools section currently under development.
+
+The current interface includes:
+
+- Explain Code
+- Commit Generator
+- Regex Explainer
+- SQL Assistant
+
+These tools are currently presented as **Coming Soon** while their AI functionality is being developed.
+
+## Tech Stack
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Lucide React
+- Vercel
+- Vercel Analytics
+
+## Project Structure
+
+```text
+src/
+├── app/
+│   ├── ai/
+│   │   ├── commit-generator/
+│   │   ├── explain-code/
+│   │   ├── regex-explainer/
+│   │   └── sql-assistant/
+│   │
+│   ├── tools/
+│   │   ├── base64/
+│   │   ├── json-formatter/
+│   │   └── uuid/
+│   │
+│   └── about/
+│
+├── components/
+│   ├── ai/
+│   ├── common/
+│   └── layout/
+│
+├── lib/
+│   └── ai/
+│
+└── types/
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
