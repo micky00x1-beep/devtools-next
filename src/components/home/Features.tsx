@@ -9,32 +9,32 @@ export default function Features() {
       <Container>
         <SectionTitle
           title="Why DeToolBoost?"
-          description="Everything you need to improve your development workflow."
+          description="Simple developer tools built to make everyday tasks faster and easier."
         />
 
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           <FeatureCard
             icon="⚡"
             title="Fast"
-            description="Instant developer tools with no unnecessary complexity."
+            description="Quick browser-based tools designed for everyday development tasks."
           />
 
           <FeatureCard
-            icon="🤖"
-            title="AI Powered"
-            description="Modern AI assistants to help you code more efficiently."
+            icon="🛠️"
+            title="Practical"
+            description="Useful utilities for formatting, encoding, generating, and working with common developer tasks."
           />
 
           <FeatureCard
             icon="🔒"
-            title="Privacy First"
-            description="Your data stays with you. No unnecessary tracking."
+            title="Browser-Based"
+            description="Core tools run directly in your browser without requiring an external backend."
           />
 
           <FeatureCard
             icon="💸"
-            title="Free"
-            description="Core developer tools available for everyone."
+            title="Free Tools"
+            description="Core developer tools are available to use without an account."
           />
         </div>
       </Container>
