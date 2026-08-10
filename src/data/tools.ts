@@ -51,4 +51,9 @@ export const tools: Tool[] = [
     description: "Write and preview Markdown instantly.",
     href: "/tools/markdown-previewer",
   },
+  {
+    title: "HTML Formatter",
+    description: "Format and validate HTML files.",
+    href: "/tools/html-formatter",
+  },
 ];
