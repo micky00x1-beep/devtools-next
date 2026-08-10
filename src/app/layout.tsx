@@ -70,7 +70,6 @@ export const metadata: Metadata = {
     title: "DeToolBoost | Free Developer Tools",
     description:
       "Fast, free developer tools and AI-powered assistants built to boost your productivity.",
-    site: "@DeToolBoost",
   },
 };
 
