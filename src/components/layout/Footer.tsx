@@ -61,34 +61,6 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-
-          <div>
-            <h3 className="mb-4 font-semibold text-white">Resources</h3>
-
-            <ul className="space-y-3 text-gray-400">
-              <li>
-                <a
-                  href="https://github.com/micky00x1-beep/devtools-next"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="transition-colors duration-300 hover:text-violet-400"
-                >
-                  GitHub
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="https://github.com/micky00x1-beep/devtools-next/issues"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="transition-colors duration-300 hover:text-violet-400"
-                >
-                  Report an Issue
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
 
         <div className="border-t border-gray-800 py-6 text-center text-sm text-gray-500">
