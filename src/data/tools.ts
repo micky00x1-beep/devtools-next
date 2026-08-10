@@ -61,4 +61,9 @@ export const tools: Tool[] = [
     description: "Parse URLs and inspect their components.",
     href: "/tools/url-parser",
   },
+  {
+    title: "JSON ↔ CSV Converter",
+    description: "Convert JSON and CSV data between formats.",
+    href: "/tools/json-csv",
+  },
 ];
