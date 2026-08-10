@@ -1,10 +1,6 @@
-import type { Metadata } from "next";
+﻿import { getToolMetadata } from "@/lib/toolMetadata";
 
-export const metadata: Metadata = {
-  title: "URL Encoder & Decoder",
-  description:
-    "Encode and decode URLs online with a fast and easy-to-use developer tool.",
-};
+export const metadata = getToolMetadata("URL Encoder & Decoder");
 
 export default function UrlEncoderLayout({
   children,

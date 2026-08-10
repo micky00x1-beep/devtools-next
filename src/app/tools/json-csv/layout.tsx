@@ -1,10 +1,6 @@
-import type { Metadata } from "next";
+﻿import { getToolMetadata } from "@/lib/toolMetadata";
 
-export const metadata: Metadata = {
-  title: "JSON to CSV Converter",
-  description:
-    "Convert JSON to CSV and CSV to JSON online with a fast and easy-to-use developer tool.",
-};
+export const metadata = getToolMetadata("JSON ↔ CSV Converter");
 
 export default function JsonCsvLayout({
   children,

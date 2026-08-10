@@ -1,10 +1,6 @@
-import type { Metadata } from "next";
+﻿import { getToolMetadata } from "@/lib/toolMetadata";
 
-export const metadata: Metadata = {
-  title: "HTML Formatter",
-  description:
-    "Format and validate HTML online with a fast and easy-to-use developer tool.",
-};
+export const metadata = getToolMetadata("HTML Formatter");
 
 export default function HtmlFormatterLayout({
   children,

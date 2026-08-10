@@ -1,10 +1,6 @@
-import type { Metadata } from "next";
+﻿import { getToolMetadata } from "@/lib/toolMetadata";
 
-export const metadata: Metadata = {
-  title: "URL Parser",
-  description:
-    "Parse URLs online and inspect their components and query parameters.",
-};
+export const metadata = getToolMetadata("URL Parser");
 
 export default function UrlParserLayout({
   children,

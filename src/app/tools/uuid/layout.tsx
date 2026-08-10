@@ -1,10 +1,6 @@
-import type { Metadata } from "next";
+﻿import { getToolMetadata } from "@/lib/toolMetadata";
 
-export const metadata: Metadata = {
-  title: "UUID Generator",
-  description:
-    "Generate UUIDs online with a fast and easy-to-use developer tool.",
-};
+export const metadata = getToolMetadata("UUID Generator");
 
 export default function UuidLayout({
   children,

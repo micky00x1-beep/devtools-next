@@ -1,10 +1,6 @@
-import type { Metadata } from "next";
+﻿import { getToolMetadata } from "@/lib/toolMetadata";
 
-export const metadata: Metadata = {
-  title: "Base64 Encoder & Decoder",
-  description:
-    "Encode and decode Base64 strings online with a fast and easy-to-use developer tool.",
-};
+export const metadata = getToolMetadata("Base64 Encoder");
 
 export default function Base64Layout({
   children,

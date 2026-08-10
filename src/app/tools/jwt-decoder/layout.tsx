@@ -1,10 +1,6 @@
-import type { Metadata } from "next";
+﻿import { getToolMetadata } from "@/lib/toolMetadata";
 
-export const metadata: Metadata = {
-  title: "JWT Decoder",
-  description:
-    "Decode JSON Web Tokens online and inspect JWT headers and payloads.",
-};
+export const metadata = getToolMetadata("JWT Decoder");
 
 export default function JwtDecoderLayout({
   children,

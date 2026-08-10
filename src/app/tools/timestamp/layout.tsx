@@ -1,10 +1,6 @@
-import type { Metadata } from "next";
+﻿import { getToolMetadata } from "@/lib/toolMetadata";
 
-export const metadata: Metadata = {
-  title: "Unix Timestamp Converter",
-  description:
-    "Convert Unix timestamps to UTC dates and UTC dates to Unix timestamps.",
-};
+export const metadata = getToolMetadata("Unix Timestamp Converter");
 
 export default function TimestampLayout({
   children,

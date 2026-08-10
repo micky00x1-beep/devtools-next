@@ -1,10 +1,6 @@
-import type { Metadata } from "next";
+﻿import { getToolMetadata } from "@/lib/toolMetadata";
 
-export const metadata: Metadata = {
-  title: "Markdown Previewer",
-  description:
-    "Write and preview Markdown online with a fast and easy-to-use developer tool.",
-};
+export const metadata = getToolMetadata("Markdown Previewer");
 
 export default function MarkdownPreviewerLayout({
   children,

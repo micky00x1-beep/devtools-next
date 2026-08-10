@@ -1,10 +1,6 @@
-import type { Metadata } from "next";
+﻿import { getToolMetadata } from "@/lib/toolMetadata";
 
-export const metadata: Metadata = {
-  title: "XML Formatter",
-  description:
-    "Format and validate XML online with a fast and easy-to-use developer tool.",
-};
+export const metadata = getToolMetadata("XML Formatter");
 
 export default function XmlFormatterLayout({
   children,

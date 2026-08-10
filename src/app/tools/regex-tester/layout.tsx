@@ -1,10 +1,6 @@
-import type { Metadata } from "next";
+﻿import { getToolMetadata } from "@/lib/toolMetadata";
 
-export const metadata: Metadata = {
-  title: "Regex Tester",
-  description:
-    "Test regular expressions online against text with a fast and easy-to-use developer tool.",
-};
+export const metadata = getToolMetadata("Regex Tester");
 
 export default function RegexTesterLayout({
   children,

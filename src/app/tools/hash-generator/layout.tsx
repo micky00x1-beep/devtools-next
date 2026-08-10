@@ -1,10 +1,6 @@
-import type { Metadata } from "next";
+﻿import { getToolMetadata } from "@/lib/toolMetadata";
 
-export const metadata: Metadata = {
-  title: "Hash Generator",
-  description:
-    "Generate SHA-256, SHA-384 and SHA-512 hashes from text with a fast and easy-to-use developer tool.",
-};
+export const metadata = getToolMetadata("Hash Generator");
 
 export default function HashGeneratorLayout({
   children,
