@@ -16,4 +16,9 @@ export const tools: Tool[] = [
     description: "Generate secure UUIDs instantly.",
     href: "/tools/uuid",
   },
+  {
+    title: "JWT Decoder",
+    description: "Decode JSON Web Tokens and inspect their contents.",
+    href: "/tools/jwt-decoder",
+  },
 ];
