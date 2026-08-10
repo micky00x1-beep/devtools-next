@@ -56,4 +56,9 @@ export const tools: Tool[] = [
     description: "Format and validate HTML files.",
     href: "/tools/html-formatter",
   },
+  {
+    title: "URL Parser",
+    description: "Parse URLs and inspect their components.",
+    href: "/tools/url-parser",
+  },
 ];
