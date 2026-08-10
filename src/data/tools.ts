@@ -36,4 +36,9 @@ export const tools: Tool[] = [
     description: "Test regular expressions against text.",
     href: "/tools/regex-tester",
   },
+  {
+    title: "Hash Generator",
+    description: "Generate secure SHA hashes from text.",
+    href: "/tools/hash-generator",
+  },
 ];
