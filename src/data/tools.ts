@@ -46,4 +46,9 @@ export const tools: Tool[] = [
     description: "Format and validate XML files.",
     href: "/tools/xml-formatter",
   },
+  {
+    title: "Markdown Previewer",
+    description: "Write and preview Markdown instantly.",
+    href: "/tools/markdown-previewer",
+  },
 ];
