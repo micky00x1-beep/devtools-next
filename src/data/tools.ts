@@ -66,4 +66,9 @@ export const tools: Tool[] = [
     description: "Convert JSON and CSV data between formats.",
     href: "/tools/json-csv",
   },
+  {
+    title: "Color Converter",
+    description: "Convert colors between HEX, RGB and HSL.",
+    href: "/tools/color-converter",
+  },
 ];
