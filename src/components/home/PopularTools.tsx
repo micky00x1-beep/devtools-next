@@ -5,6 +5,11 @@ import ToolCard from "@/components/common/ToolCard";
 import { tools } from "@/data/tools";
 
 export default function PopularTools() {
+  const popularTools = tools.filter((tool) =>
+    ["/tools/json-formatter", "/tools/base64", "/tools/uuid"].includes(
+      tool.href
+    )
+  );
   return (
     <Section>
       <Container>
@@ -14,7 +19,7 @@ export default function PopularTools() {
         />
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {tools.map((tool) => (
+          {popularTools.map((tool) => (
             <ToolCard
               key={tool.href}
               title={tool.title}
