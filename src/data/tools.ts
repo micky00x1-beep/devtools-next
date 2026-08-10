@@ -21,4 +21,9 @@ export const tools: Tool[] = [
     description: "Decode JSON Web Tokens and inspect their contents.",
     href: "/tools/jwt-decoder",
   },
+  {
+    title: "URL Encoder & Decoder",
+    description: "Encode and decode URLs and text.",
+    href: "/tools/url-encoder",
+  },
 ];
