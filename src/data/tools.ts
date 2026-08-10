@@ -31,4 +31,9 @@ export const tools: Tool[] = [
     description: "Convert Unix timestamps and UTC dates.",
     href: "/tools/timestamp",
   },
+  {
+    title: "Regex Tester",
+    description: "Test regular expressions against text.",
+    href: "/tools/regex-tester",
+  },
 ];
