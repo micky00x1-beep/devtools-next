@@ -41,4 +41,9 @@ export const tools: Tool[] = [
     description: "Generate secure SHA hashes from text.",
     href: "/tools/hash-generator",
   },
+  {
+    title: "XML Formatter",
+    description: "Format and validate XML files.",
+    href: "/tools/xml-formatter",
+  },
 ];
