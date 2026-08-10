@@ -26,4 +26,9 @@ export const tools: Tool[] = [
     description: "Encode and decode URLs and text.",
     href: "/tools/url-encoder",
   },
+  {
+    title: "Unix Timestamp Converter",
+    description: "Convert Unix timestamps and UTC dates.",
+    href: "/tools/timestamp",
+  },
 ];
