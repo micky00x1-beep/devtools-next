@@ -1,9 +1,10 @@
-import { MetadataRoute } from "next";
+import type { MetadataRoute } from "next";
+import { tools } from "@/data/tools";
+
+const baseUrl = "https://detoolboost.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://detoolboost.com";
-
-  return [
+  const staticPages: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
       lastModified: new Date(),
@@ -15,24 +16,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/tools/json-formatter`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/tools/base64`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/tools/uuid`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
     },
     {
       url: `${baseUrl}/ai`,
@@ -47,4 +30,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     },
   ];
+
+  const toolPages: MetadataRoute.Sitemap = tools.map((tool) => ({
+    url: `${baseUrl}${tool.href}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.8,
+  }));
+
+  return [...staticPages, ...toolPages];
 }
