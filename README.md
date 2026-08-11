@@ -10,21 +10,65 @@ The project is built with Next.js and focuses on a clean, responsive interface w
 
 ### Developer Tools
 
-- **JSON Formatter**
-  - Format and validate JSON
-  - Copy formatted output
-  - Clear input and output
+<!-- TOOLS:START -->
 
-- **Base64 Encoder & Decoder**
-  - Encode text to Base64
-  - Decode Base64 strings
-  - UTF-8 support
-  - Copy output
+- **JSON Formatter**
+
+  - Format and validate JSON files.
+
+- **Base64 Encoder**
+
+  - Encode and decode Base64 strings.
 
 - **UUID Generator**
-  - Generate UUIDs using the browser's native `crypto.randomUUID()` API
-  - Copy generated UUIDs
-  - Clear generated values
+
+  - Generate secure UUIDs instantly.
+
+- **JWT Decoder**
+
+  - Decode JSON Web Tokens and inspect their contents.
+
+- **URL Encoder & Decoder**
+
+  - Encode and decode URLs and text.
+
+- **Unix Timestamp Converter**
+
+  - Convert Unix timestamps and UTC dates.
+
+- **Regex Tester**
+
+  - Test regular expressions against text.
+
+- **Hash Generator**
+
+  - Generate secure SHA hashes from text.
+
+- **XML Formatter**
+
+  - Format and validate XML files.
+
+- **Markdown Previewer**
+
+  - Write and preview Markdown instantly.
+
+- **HTML Formatter**
+
+  - Format and validate HTML files.
+
+- **URL Parser**
+
+  - Parse URLs and inspect their components.
+
+- **JSON ↔ CSV Converter**
+
+  - Convert JSON and CSV data between formats.
+
+- **Color Converter**
+
+  - Convert colors between HEX, RGB and HSL.
+
+<!-- TOOLS:END -->
 
 ### AI Tools
 
