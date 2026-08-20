@@ -31,7 +31,10 @@ export default function PrivacyPolicyPage() {
           Email: <strong>privacy@detoolboost.com</strong>
         </p>
 
-        <p>These details must be completed before the website is published.</p>
+        <p>
+          For privacy-related questions or requests, you can contact DeToolBoost
+          at <strong>privacy@detoolboost.com</strong>.
+        </p>
 
         <h2>2. Information We Process</h2>
 
