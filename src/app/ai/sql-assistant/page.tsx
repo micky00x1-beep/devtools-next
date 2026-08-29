@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import ToolLayout from "@/components/common/ToolLayout";
 import SQLAssistantForm from "@/components/ai/SQLAssistantForm";
+
+export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 export default function SQLAssistantPage() {
   return (

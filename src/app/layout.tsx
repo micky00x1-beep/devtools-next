@@ -23,8 +23,7 @@ export const metadata: Metadata = {
     template: "%s | DeToolBoost",
   },
 
-  description:
-    "Fast, free developer tools and AI-powered assistants built to boost your productivity.",
+  description: "Fast, free developer tools built to boost your productivity.",
 
   keywords: [
     "developer tools",
@@ -57,8 +56,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     title: "DeToolBoost | Free Developer Tools",
-    description:
-      "Fast, free developer tools and AI-powered assistants built to boost your productivity.",
+    description: "Fast, free developer tools built to boost your productivity.",
     url: "https://detoolboost.com",
     siteName: "DeToolBoost",
     locale: "en_US",

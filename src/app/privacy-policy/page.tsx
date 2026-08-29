@@ -12,7 +12,7 @@ export default function PrivacyPolicyPage() {
         <h1>Privacy Policy</h1>
 
         <p>
-          <strong>Last updated:</strong> August 10, 2026
+          <strong>Last updated:</strong> August 29, 2026
         </p>
 
         <p>
@@ -75,7 +75,7 @@ export default function PrivacyPolicyPage() {
         </p>
 
         <p>
-          According to Vercel's documentation, Web Analytics does not use
+          According to Vercel&apos;s documentation, Web Analytics does not use
           cookies for visitor identification. Visitors are identified using a
           hash generated from the incoming request, and the generated visitor
           identifier is automatically discarded after 24 hours. Vercel states
@@ -90,7 +90,7 @@ export default function PrivacyPolicyPage() {
         </p>
 
         <p>
-          For further information, please consult Vercel's{" "}
+          For further information, please consult Vercel&apos;s{" "}
           <a
             href="https://vercel.com/docs/analytics/privacy-policy"
             target="_blank"
@@ -101,7 +101,51 @@ export default function PrivacyPolicyPage() {
           .
         </p>
 
-        <h2>5. Purpose of Processing</h2>
+        <h2>5. Google AdSense and Advertising</h2>
+
+        <p>
+          DeToolBoost uses Google AdSense, an advertising service provided by
+          Google, to display advertisements on the website.
+        </p>
+
+        <p>
+          Third-party vendors, including Google, may use cookies or similar
+          technologies to serve ads based on a user&apos;s previous visits to
+          DeToolBoost or other websites.
+        </p>
+
+        <p>
+          Google&apos;s use of advertising cookies enables Google and its
+          partners to serve advertisements based on users&apos; visits to this
+          website and other websites on the Internet.
+        </p>
+
+        <p>
+          Users can manage or opt out of personalized advertising through
+          Google&apos;s{" "}
+          <a
+            href="https://adssettings.google.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ads Settings
+          </a>
+          .
+        </p>
+
+        <p>
+          Where required by applicable law, DeToolBoost uses a consent
+          management platform to request and manage user consent before
+          advertising technologies are used.
+        </p>
+
+        <p>
+          Third parties may place and read cookies on users&apos; browsers or
+          use web beacons, IP addresses or other identifiers as a result of
+          advertising being served on DeToolBoost.
+        </p>
+
+        <h2>6. Purpose of Processing</h2>
 
         <p>Information may be processed for the following purposes:</p>
 
@@ -113,7 +157,7 @@ export default function PrivacyPolicyPage() {
           <li>complying with applicable legal obligations.</li>
         </ul>
 
-        <h2>6. Legal Basis</h2>
+        <h2>7. Legal Basis</h2>
 
         <p>
           Depending on the specific processing activity, the legal basis may
@@ -123,7 +167,7 @@ export default function PrivacyPolicyPage() {
           applicable law.
         </p>
 
-        <h2>7. Data Retention</h2>
+        <h2>8. Data Retention</h2>
 
         <p>
           Personal information is retained only for as long as necessary for the
@@ -136,7 +180,7 @@ export default function PrivacyPolicyPage() {
           automatically discarded after 24 hours.
         </p>
 
-        <h2>8. Data Sharing and Service Providers</h2>
+        <h2>9. Data Sharing and Service Providers</h2>
 
         <p>
           DeToolBoost may rely on service providers necessary to host, maintain,
@@ -146,7 +190,7 @@ export default function PrivacyPolicyPage() {
 
         <p>DeToolBoost does not sell personal information to third parties.</p>
 
-        <h2>9. International Transfers</h2>
+        <h2>10. International Transfers</h2>
 
         <p>
           Some service providers used to operate the website may process data
@@ -155,7 +199,7 @@ export default function PrivacyPolicyPage() {
           protection law.
         </p>
 
-        <h2>10. Your Rights</h2>
+        <h2>11. Your Rights</h2>
 
         <p>
           Where the GDPR applies, you may have rights including access,
@@ -175,7 +219,7 @@ export default function PrivacyPolicyPage() {
           protection supervisory authority.
         </p>
 
-        <h2>11. Changes to this Policy</h2>
+        <h2>12. Changes to this Policy</h2>
 
         <p>
           This Privacy Policy may be updated when necessary to reflect changes
@@ -184,7 +228,7 @@ export default function PrivacyPolicyPage() {
           last updated.
         </p>
 
-        <h2>12. Contact</h2>
+        <h2>13. Contact</h2>
 
         <p>
           For questions regarding this Privacy Policy or the processing of
